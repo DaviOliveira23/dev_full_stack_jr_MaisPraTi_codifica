@@ -14,8 +14,8 @@ Siga os passos abaixo para baixar e rodar o projeto localmente:
  2. **Acesse a pasta do projeto:** 
         cd MaisPrati/Modulo 1 - Atividades
  3. **Instale as dependências:**
-        1. npm install
-        2. npm install prompt-sync
+    1. npm install
+    2. npm install prompt-sync
 
 ### 🧪 **Testando os exercícios**
 Todos os exercícios estão concentrados no arquivo:
