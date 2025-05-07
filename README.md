@@ -1,6 +1,6 @@
-# **MaisPrati - Módulo 1**
+# **MaisPrati - Lista de Exercícios 1**
 
-Este repositório contém exercícios práticos desenvolvidos durante o Módulo 1 do curso de programação. Todos os exercícios estão organizados no mesmo arquivo e escritos em JavaScript (Node.js).
+Este repositório contém exercícios práticos que abordam estruturas básicas em Javascript desenvolvidos durante o Módulo 1 do curso de programação na atividade Lista de exercícios 1. Todos os exercícios estão organizados no mesmo arquivo e escritos em JavaScript (Node.js).
 
 ## ✅ **Pré-requisitos**
 Antes de começar, você precisa ter instalado em sua máquina:
