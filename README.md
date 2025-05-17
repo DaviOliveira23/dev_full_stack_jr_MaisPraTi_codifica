@@ -10,7 +10,7 @@ Visual Studio Code (Ou alguma Idea como intellij para o código ser executado)
 ### 🚀**Como executar o projeto**
 Siga os passos abaixo para baixar e rodar o projeto localmente:
  1. **Clone o repositório:** 
-        git clone https://github.com/seu-usuario/seu-repositorio.git
+        git clone https://github.com/seu-usuario/seu-repositorio.git](https://github.com/DaviOliveira23/dev_full_stack_jr_MaisPraTi_codifica.git
  2. **Acesse a pasta do projeto:** 
         cd MaisPrati/Modulo 1 - Atividades
  3. **Instale as dependências:**
