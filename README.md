@@ -1,6 +1,6 @@
-# **MaisPrati - Lista de Exercícios 1**
+# **MaisPrati - Listas de Exercícios 1 e 2**
 
-Este repositório contém exercícios práticos que abordam estruturas básicas em Javascript desenvolvidos durante o Módulo 1 do curso de programação na atividade Lista de exercícios 1. Todos os exercícios estão organizados no mesmo arquivo e escritos em JavaScript (Node.js).
+Este repositório contém exercícios práticos que abordam estruturas básicas em Javascript desenvolvidos durante o Módulo 1 do curso de programação na atividade Lista de exercícios 1 e 2. Todos os exercícios estão organizados em um único arquivo respectivo da sua lista escritos em JavaScript (Node.js).
 
 ## ✅ **Pré-requisitos**
 Antes de começar, você precisa ter instalado em sua máquina:
@@ -18,8 +18,8 @@ Siga os passos abaixo para baixar e rodar o projeto localmente:
     2. npm install prompt-sync
 
 ### 🧪 **Testando os exercícios**
-Todos os exercícios estão concentrados no arquivo:
-Modulo 1 - Atividades/lista_de_exercicios1.js
+Todos os exercícios estão concentrados no arquivo respectivo da lista:
+Ex: Modulo 1 - Atividades/lista_de_exercicios1.js ou Atividades/lista_de_exercicios2.js 
 
 #### **Importante!!**:
 Comente os exercícios que você não estiver testando no momento.
