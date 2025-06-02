@@ -187,14 +187,14 @@ console.log(`Fatorial de ${numeroFatorial} é: ${fatorial}`);
 
 // 15. Escreva um programa que gera e imprime os primeiros 10 números da sequência de
 // Fibonacci utilizando um loop for
-let n1 = 0;
-let n2 = 1;
-
+function fibonacci(n1, n2) {
 console.log("Os 10 primeiros números da sequência de Fibonacci:");
-for (let i = 0; i < 10; i++) {
-    console.log(n1);
-    let prox = n1 + n2;
-    n1 = n2;
-    n2 = prox;
+    for (let i = 0; i < 10; i++) {
+        console.log(n1);
+        let prox = n1 + n2;
+        n1 = n2;
+        n2 = prox;
+    }
 }
+fibonacci(0, 1)
 
