@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de FeedBack</title>
+</head>
+<body>
+    <main class="main">
+        <section class="section">
+            <form class="form">
+                <div class="form-field">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome:">
+                </div>
+                <div class="form-field">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail:">
+                </div>
+                <div class="form-field">
+                    <label for="adress">Endereço Completo</label>
+                    <input type="adress" name="adress" id="adress" placeholder="Digite seu Endereço Completo:">
+                </div>
+                <div class="form-field">
+                    <label for="feedback-type">Tipo de FeedBack</label>
+                    <select name="feedback-type" id="feedback-type">
+                        <option value="standard" selected>Selecione uma opção...</option>
+                        <option value="positivo">feedback positivo</option>
+                        <option value="construtivo">feedback construtivo</option>
+                        <option value="formal">feedback formal</option>
+                        <option value="informal">feedback informal</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="feedback-field">Escreva seu feedback</label>
+                    <textarea name="feedback-field" id="feedback-field" placeholder="Digite seu feedback..."></textarea>
+                </div>
+
+                <button class="submit-btn">
+                    Enviar
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
