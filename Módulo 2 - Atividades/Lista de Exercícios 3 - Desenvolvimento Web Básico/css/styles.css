@@ -1,3 +1,4 @@
+/*Exercício 04*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -29,4 +30,19 @@
     background-color: var(--cor-fundo-black);
     color: var(--cor-texto-green);
     border: 2px solid;
+}
+
+/*Exercício 05*/
+h2 {
+    font-size: 2.0em;
+    text-decoration: underline;
+}
+
+.destaque {
+    font-style: italic;
+    background-color: rgb(244, 142, 142);
+}
+
+#importante {
+    border-top: 5px solid red;
 }
