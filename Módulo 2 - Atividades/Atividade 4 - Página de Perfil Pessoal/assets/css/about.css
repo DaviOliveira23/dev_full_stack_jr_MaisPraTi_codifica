@@ -1,0 +1,16 @@
+.about-me {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 50%;
+}
+
+
+.about-title {
+    margin-bottom: 5%;
+}
