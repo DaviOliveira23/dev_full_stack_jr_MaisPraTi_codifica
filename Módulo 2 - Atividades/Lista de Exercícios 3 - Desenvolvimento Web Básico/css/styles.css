@@ -3,6 +3,9 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+:root {
     --cor-fundo-black: rgb(42, 42, 42);
     --cor-texto-orange: orange;
     --cor-fundo-blue: rgb(74, 122, 254);
