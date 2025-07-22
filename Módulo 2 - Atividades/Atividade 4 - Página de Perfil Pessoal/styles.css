@@ -9,6 +9,77 @@
     --font-secondary: "Zen Kaku Gothic New", sans-serif;
     --color-primary: #F0F0F0;
     --color-secondary: #313740;
-    --color-tertiary: #F26C59;
+    --color-tertiary: #1C1F21;
+    --color-quaternary: #F26C59;
 }
 
+body {
+    min-height: 100vh;
+    font-family: var(--font-secondary);
+    color: var(--color-tertiary);
+    background-color: var(--color-primary);
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90%;
+}
+
+/*Sobre mim*/
+.banner-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.image-perfil {
+    border-radius: 26px;
+    max-width: 100%;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.description {
+    font-size: 3.5em;
+    font-weight: 800;
+}
+
+.subtitle {
+    font-family: var(--font-secondary);
+    font-size: 2.5em;
+    font-weight: 400;
+    text-indent: 20px;
+    margin: 2% 0;
+}
+
+.btn-more {
+    display: flex;
+    margin: 5em 0;
+    gap: 5%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    max-width: 25%;
+    width: 100%;
+    padding: 2.5%;
+    font-weight: 600;
+    background-color: var(--color-quaternary);
+    color: var(--color-primary);
+    border: none;
+}

@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    height: 100%;
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    gap: 4em;
+}
+
+.menu-list-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+.menu-list-option {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: var(--color-tertiary);
+}
+
+.logo {
+    max-width: 2.5em;
+    height: auto;
+}
+
+.icon-sol {
+    max-width: 100%;
+}
+
+
