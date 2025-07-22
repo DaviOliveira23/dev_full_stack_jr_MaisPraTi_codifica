@@ -1,45 +1,14 @@
-body {
+* {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-
-.nav_menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+:root {
+    --font-primary: "acumin-pro", sans-serif;
+    --font-secondary: "Zen Kaku Gothic New", sans-serif;
+    --color-primary: #F0F0F0;
+    --color-secondary: #313740;
+    --color-tertiary: #F26C59;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-li a {
-    text-decoration: none;
-}
-
-.banner {
-    display: flex;
-    align-items: flex-start;
-    
-}
-
-.description {
-    width: 40%;
-    padding: 3rem;
-    border: solid red;
-}
-
-.container_image {
-    text-align: center;
-    width: 50%;
-    text-align: left;
-    border: solid yellow;
-}
-
-.my_photo {
-    border: solid black;
-    width: 50%;
-    
-}
