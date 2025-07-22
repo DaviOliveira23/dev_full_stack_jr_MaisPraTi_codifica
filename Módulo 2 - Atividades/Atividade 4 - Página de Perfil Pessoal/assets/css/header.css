@@ -1,3 +1,5 @@
+@import url('../../styles.css');
+
 .header {
     display: flex;
     height: 5rem;
@@ -16,22 +18,28 @@
     align-items: center;
     height: 100%;
     list-style: none;
-    gap: 4em;
+    gap: 1em;
 }
 
 .menu-list-item {
     display: flex;
     align-items: center;
     height: 100%;
-
 }
+
 
 .menu-list-option {
     display: flex;
     align-items: center;
     height: 100%;
+    padding: 1.5em;
     text-decoration: none;
     color: var(--color-tertiary);
+}
+
+.menu-list-item:hover {
+    transition: transform 0.8s;
+    border-bottom: 4px solid var(--color-quaternary);
 }
 
 .logo {
