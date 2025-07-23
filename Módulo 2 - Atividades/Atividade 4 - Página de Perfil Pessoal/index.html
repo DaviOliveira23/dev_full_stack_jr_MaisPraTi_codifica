@@ -22,21 +22,19 @@
                     <a href="#" class="menu-list-option">Home</a>
                 </li>
                 <li class="menu-list-item">
-                    <a href="#" class="menu-list-option">Sobre mim</a>
+                    <a href="#about-me" class="menu-list-option">Sobre mim</a>
                 </li>
                 <li class="menu-list-item">
-                    <a href="#" class="menu-list-option">Habilidades</a>
+                    <a href="#skills" class="menu-list-option">Habilidades</a>
                 </li>
                 <li class="menu-list-item">
-                    <a href="#" class="menu-list-option">Projetos</a>
+                    <a href="#project" class="menu-list-option">Projetos</a>
                 </li>
                 <li class="menu-list-item">
-                    <a href="#" class="menu-list-option">Contato</a>
+                    <a href="#contact" class="menu-list-option">Contato</a>
                 </li>
             </ul>
         </nav>
-    </header>
-    <main class="main container">
         <section class="banner">
             <div class="banner-container">
                 <div class="introduction">
@@ -46,15 +44,21 @@
                 </div>
 
                 <div class="btn-more">
-                    <button class="btn-contact-me btn">Contato</button>
-                    <button class="btn-about-me btn">Saiba mais</button>
+                    <button class="btn-contact-me btn">
+                        <a href="#contact">Contato</a>
+                    </button>
+                    <button class="btn-about-me btn">
+                        <a href="#about-me">Saiba mais</a>
+                    </button>
                 </div>
             </div>
             <div class="image-container">
                 <img class="image-perfil" src="assets/img/profile.jpg" alt="Foto de Davi Oliveira">
             </div>
         </section>
-        <section class="about-me">
+    </header>
+    <main class="main container">
+        <section class="about-me" id="about-me">
             <div class="about-content">
                 <h1 class="about-title title">Sobre mim</h1>
                 <p class="about-description">Olá! Meu nome é Davi Mesquita de Oliveira. Me considero uma pessoa criativa, curiosa e persistente,
@@ -76,7 +80,7 @@
                 </p>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="cards-container">
                 <div class="card-image">
                     <img src="assets/img/icons/JavaScript.svg" alt="Icone da linguagem JavaScript">
@@ -104,7 +108,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="project">
             <h1 class="title project-title">Projetos</h1>
             <div class="projects-container">
                 <div class="card-project">
@@ -133,7 +137,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact"></section>
+        <section class="contact" id="contact"></section>
     </main>
     <footer class="footer">
 
