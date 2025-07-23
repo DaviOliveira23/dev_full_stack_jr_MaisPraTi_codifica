@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
 :root {
     --font-primary: "acumin-pro", sans-serif;
     --font-secondary: "Zen Kaku Gothic New", sans-serif;
@@ -69,7 +74,7 @@ body {
 
 .btn-more {
     display: flex;
-    margin: 5em 0;
+    padding: 2em 0;
     gap: 5%;
 }
 
@@ -82,5 +87,25 @@ body {
     font-weight: 600;
     background-color: var(--color-quaternary);
     color: var(--color-primary);
+    transition: transform 0.3s ease;
     border: none;
+}
+
+.btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2.5%;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-quaternary);
+    transform: scale(1.02);
+
+    a {
+        color: var(--color-tertiary);
+    }
 }
