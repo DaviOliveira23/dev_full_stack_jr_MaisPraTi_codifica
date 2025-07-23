@@ -1,5 +1,5 @@
 .skills {
-    min-height: 100vh;
+    min-height: 40vh;
 }
 .cards-container {
     display: flex;
@@ -16,7 +16,6 @@
     align-items: center;
     justify-content: center;
     transition: transform 0.3s;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
 }
 
 .card-image:hover {
