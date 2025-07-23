@@ -43,8 +43,11 @@
 }
 
 .logo {
-    max-width: 2.5em;
-    height: auto;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-style: italic;
+    font-weight: 900;
+    color: var(--color-tertiary);
 }
 
 .icon-sol {
