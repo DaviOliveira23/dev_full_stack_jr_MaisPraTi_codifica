@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/skills.css">
     <link rel="stylesheet" href="assets/css/projeto.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+
     <title>Perfil Pessoal</title>
 </head>
 <body>
@@ -57,8 +59,8 @@
             </div>
         </section>
     </header>
-    <main class="main container">
-        <section class="about-me" id="about-me">
+    <main class="main">
+        <section class="about-me container" id="about-me">
             <div class="about-content">
                 <h1 class="about-title title">Sobre mim</h1>
                 <p class="about-description">Olá! Meu nome é Davi Mesquita de Oliveira. Me considero uma pessoa criativa, curiosa e persistente,
@@ -80,7 +82,7 @@
                 </p>
             </div>
         </section>
-        <section class="skills" id="skills">
+        <section class="skills container" id="skills">
             <div class="cards-container">
                 <div class="card-image">
                     <img src="assets/img/icons/JavaScript.svg" alt="Icone da linguagem JavaScript">
@@ -108,7 +110,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects" id="project">
+        <section class="projects container" id="project">
             <h1 class="title project-title">Projetos</h1>
             <div class="projects-container">
                 <div class="card-project">
@@ -137,7 +139,21 @@
                 </div>
             </div>
         </section>
-        <section class="contact" id="contact"></section>
+        <section class="contact" id="contact">
+        <h1 class="title contact-title">Me envie uma mensagem</h1>
+        <form class="contact-form" action="#" method="post">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required placeholder="Seu nome">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Escreva sua mensagem..."></textarea>
+
+            <button type="submit" class="btn btn-send">Enviar</button>
+        </form>
+        </section>
     </main>
     <footer class="footer">
 
