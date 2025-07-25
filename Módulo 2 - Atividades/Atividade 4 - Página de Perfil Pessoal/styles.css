@@ -36,15 +36,21 @@ body {
 /*Sobre mim*/
 .banner {
   display: grid;
+  margin-top: 3%;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   width: 100%;
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
 .image-perfil {
     border-radius: 26px;
-    max-width: 100%;
+    max-width: 65%;
 }
 
 .banner-container {
@@ -88,7 +94,7 @@ body {
     background-color: var(--color-quaternary);
     color: var(--color-primary);
     transition: transform 0.3s ease;
-    border: none;
+    border: transparent 1px solid;
 }
 
 .btn a {
@@ -102,7 +108,7 @@ body {
 
 .btn:hover {
     background-color: var(--color-primary);
-    border: 2px solid var(--color-quaternary);
+    border: 1px solid var(--color-quaternary);
     transform: scale(1.02);
 
     a {
