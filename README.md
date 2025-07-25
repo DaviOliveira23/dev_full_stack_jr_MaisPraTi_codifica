@@ -2,6 +2,13 @@
 
 Este repositório contém exercícios referentes ao módulo 02, onde foram desenvolvidas atividades relacionados ao front end com ferramentas como HTML, CSS e Javascript.
 
+## Exercício 03
+Neste exercício foram realizados uma lista de atividades HTML e CSS que agrupou todos os conteúdos vistos ao longo do módulo, nos permitindo revisar e aplicar esses conhecimentos em prática.
+
+## Atividade 04
+Nesta atividade foi feito o desafio de criarmos uma Página de Perfil, portfólio para dispositivos web e mobile. Onde poderíamos apresentar nossos projetos, informações de contato e informações que nos refletissem como profissionais.
+Junto a isso, aplicar os conhecimentos vistos no módulo em prática com HTML e CSS.
+
 
 ### 🚀**Como executar o projeto**
 Siga os passos abaixo para baixar e rodar o projeto localmente:
