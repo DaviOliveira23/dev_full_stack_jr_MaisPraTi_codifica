@@ -1,5 +1,10 @@
 .skills {
+    display: flex;
+    align-items: center;
     min-height: 40vh;
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);
+    margin-bottom: 5%;
 }
 .cards-container {
     display: flex;
