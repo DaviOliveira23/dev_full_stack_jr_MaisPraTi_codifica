@@ -32,3 +32,23 @@
     max-height: 100%;
     object-fit: contain;
 }
+
+@media (max-width: 600px) {
+  .skills {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .cards-container {
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  .card-image {
+    width: 30%;
+  }
+
+  .card-image img {
+    max-width: 60%;
+  }
+}
