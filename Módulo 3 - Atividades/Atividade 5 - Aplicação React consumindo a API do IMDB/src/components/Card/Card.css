@@ -1,0 +1,35 @@
+.card-container {
+    display: grid;
+    list-style: none;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.card-movie {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border-radius: 12px;
+}
+
+.card-movie .title {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.card-movie .ano {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.btn-details {
+    font-size: 16px;
+    background-color: #ffb039;
+    color: #ffff;
+    padding: 5%;
+    border: none;
+}
