@@ -1,0 +1,18 @@
+.navigation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btn-navigation {
+    padding: 1%;
+    background-color: #ffb039;
+    color: #ffff;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.btn-navigation:hover {
+    background-color: #b37314;
+    transform: scale(1.03);
+}
