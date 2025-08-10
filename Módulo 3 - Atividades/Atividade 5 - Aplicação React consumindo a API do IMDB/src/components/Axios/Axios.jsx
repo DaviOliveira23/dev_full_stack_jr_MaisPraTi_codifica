@@ -8,6 +8,12 @@ const FetchGet = ({ searchInput }) => {
     const [totalPages, setTotalPages] = useState(0);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
+    
+    useEffect(() => {
+    if (searchInput) {
+        setCurrentPage(1);
+    }
+    }, [searchInput]);
 
     useEffect(() => {
         if (!searchInput) return;
@@ -24,6 +30,8 @@ const FetchGet = ({ searchInput }) => {
                     setTotalPages(data.totalResults);
                 } else {
                     setMovies([]);
+                    setCurrentPage(0);
+                    setTotalPages(0);
                 }
             } catch (err) {
                 setError(err.message);
