@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Card from '../Card/Card';
 
 const FetchGet = ({ searchInput }) => {
     const [movies, setMovies] = useState([]);
@@ -34,18 +35,7 @@ const FetchGet = ({ searchInput }) => {
         <div>
             {loading && <p>Carregando...</p>}
             {error && <p style={{ color: 'red' }}>Erro: {error}</p>}
-            <ul>
-                {movies.length > 0 || !searchInput?(
-                    movies.map((movie) => (
-                        <li key={movie.imdbID} className='card-movie'>
-                            <img src={movie.Poster} alt={movie.Title} />
-                            <p className='title'>{movie.Title}</p>
-                        </li>
-                    ))
-                ) : (
-                    <p>Nenhum filme encontrado.</p>
-                )}
-            </ul>
+            <Card movies={movies} searchInput={searchInput} />
         </div>
     );
 };

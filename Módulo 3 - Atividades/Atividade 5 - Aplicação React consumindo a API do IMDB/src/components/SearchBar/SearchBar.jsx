@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './SearchBar.css';
-import FetchGet from '../../utils/Axios';
+import FetchGet from '../Axios/Axios';
 
 function SearchBar() {
   const [searchQuery, setSearchQuery] = useState('');
