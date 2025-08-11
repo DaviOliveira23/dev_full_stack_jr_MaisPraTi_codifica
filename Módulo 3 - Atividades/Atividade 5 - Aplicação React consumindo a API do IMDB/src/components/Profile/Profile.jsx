@@ -1,12 +1,21 @@
 import { FaArrowLeft } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 import './Profile.css';
+import IsFavorite from "../isFavorite/isFavorite";
 
 const Profile = ({ movieId, onBack }) => {
     const [movie, setMovie] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
+    const [favoritos, setFavoritos] = useState(() => {
+        const stored = localStorage.getItem('favoritos');
+        return stored ? JSON.parse(stored) : [];
+    });
 
+    useEffect(() => {
+        localStorage.setItem('favoritos', JSON.stringify(favoritos));
+    }, [favoritos]);
+    
     useEffect(() => {
         const getMovieDetails = async () => {
             setLoading(true);
@@ -37,6 +46,12 @@ const Profile = ({ movieId, onBack }) => {
     return (
         <div className="profile-container">
             <div className="info-group">
+                <IsFavorite
+                    key={movie.imdbID}
+                    movie={movie}
+                    favoritos={favoritos}
+                    setFavoritos={setFavoritos}
+                />
                 <div className="poster-container">
                     <img className="img-poster" src={movie.Poster} alt={movie.Title} />
                 </div>
