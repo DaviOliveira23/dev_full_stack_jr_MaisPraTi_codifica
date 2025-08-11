@@ -38,7 +38,7 @@ function SearchBar() {
         />
       </form>
 
-      {<FetchGet searchInput={submittedQuery} />}
+      <FetchGet searchInput={submittedQuery} />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Card from '../Card/Card';
 import PageNavigation from '../PageNavigation/PageNavigation';
+import Profile from '../Profile/Profile';
 
 const FetchGet = ({ searchInput }) => {
     const [movies, setMovies] = useState([]);
@@ -8,7 +9,8 @@ const FetchGet = ({ searchInput }) => {
     const [totalPages, setTotalPages] = useState(0);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
-    
+    const [selectedMovie, setSelectedMovie] = useState(null);
+
     useEffect(() => {
     if (searchInput) {
         setCurrentPage(1);
@@ -47,15 +49,28 @@ const FetchGet = ({ searchInput }) => {
         <div>
             {loading && <p>Carregando...</p>}
             {error && <p style={{ color: 'red' }}>Erro: {error}</p>}
-            <Card
-                movies={movies}
-                searchInput={searchInput}
-            />
-            <PageNavigation
-                currentPage={currentPage}
-                totalPages={totalPages}
-                setCurrentPage={setCurrentPage}
-            />
+
+            {selectedMovie ? (
+                <Profile
+                    movieId={selectedMovie}
+                    onBack={() => setSelectedMovie(null)}
+                />
+            ) : (
+                <>
+                    <Card
+                        movies={movies}
+                        searchInput={searchInput}
+                        onShowDetails={(id) => setSelectedMovie(id)}
+                    />
+                    <PageNavigation
+                        currentPage={currentPage}
+                        totalPages={totalPages}
+                        setCurrentPage={setCurrentPage}
+                    />
+                </>
+            )}
+
+
         </div>
     );
 };
