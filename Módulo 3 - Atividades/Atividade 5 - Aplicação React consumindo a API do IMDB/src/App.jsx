@@ -1,12 +1,8 @@
-import SearchBar from './components/SearchBar/SearchBar.jsx'
+import { RouterProvider} from 'react-router-dom';
+import router from './config/routes';
+
 function App() {
-
-
-  return (
-    <>
-      <SearchBar />
-    </>
-  )
+  return <RouterProvider router={router}/>
 }
 
 export default App
