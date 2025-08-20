@@ -1,25 +1,20 @@
 import { useState } from 'react';
 import './SearchBar.css';
 import lupa from '../../assets/img/lupa.png';
-import FetchGet from '../Axios/Axios';
 
-function SearchBar() {
+function SearchBar({ onSearch }) {
   const [searchQuery, setSearchQuery] = useState('');
-  const [submittedQuery, setSubmittedQuery] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmittedQuery(searchQuery);
+    onSearch(searchQuery);
   };
 
   return (
     <div className='search-container'>
       <form className='input-group' onSubmit={handleSubmit}>
         <div className='input-icon'>
-          <button
-            className='btn-submit'
-            type="submit"
-          >
+          <button className='btn-submit' type="submit">
             <img
               className="img-search"
               src={lupa}
@@ -38,8 +33,6 @@ function SearchBar() {
           onChange={(e) => setSearchQuery(e.target.value)}
         />
       </form>
-
-      <FetchGet searchInput={submittedQuery} />
     </div>
   );
 }
