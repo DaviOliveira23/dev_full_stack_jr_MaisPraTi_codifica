@@ -1,6 +1,7 @@
 import './Card.css';
 import { useState, useEffect } from 'react';
 import IsFavorite from '../isFavorite/isFavorite';
+import notImage from '../../assets/img/no-image.jpg';
 
 const Card = ({ movies, searchInput, onShowDetails }) => {
     const [favoritos, setFavoritos] = useState(() => {
@@ -11,9 +12,8 @@ const Card = ({ movies, searchInput, onShowDetails }) => {
     useEffect(() => {
         localStorage.setItem('favoritos', JSON.stringify(favoritos));
     }, [favoritos]);
-
+    
     return (
-        <div>
             <ul className='card-container'>
                 {movies.length > 0 || !searchInput? (
                     movies.map((movie) => (
@@ -24,7 +24,15 @@ const Card = ({ movies, searchInput, onShowDetails }) => {
                                 favoritos={favoritos}
                                 setFavoritos={setFavoritos}
                             />
-                            <img src={movie.Poster} alt={movie.Title} />
+                            <img
+                                className="poster"
+                                src={movie.Poster && movie.Poster !== "N/A" ? movie.Poster : notImage}
+                                alt={movie.Title}
+                                onError={(e) => {
+                                    e.currentTarget.onerror = null;
+                                    e.currentTarget.src = notImage;
+                                }}
+                            />
                             <p className='title'>{movie.Title}</p>
                             <p className='ano'>{movie.Year}</p>
                             <button
@@ -39,7 +47,6 @@ const Card = ({ movies, searchInput, onShowDetails }) => {
                     <p>Nenhum filme encontrado.</p>
                 )}
             </ul>
-        </div>
     );
 };
 
