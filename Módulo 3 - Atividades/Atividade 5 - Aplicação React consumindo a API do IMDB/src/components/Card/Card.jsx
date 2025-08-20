@@ -1,7 +1,7 @@
-import './Card.css';
-import { useState, useEffect } from 'react';
-import IsFavorite from '../isFavorite/isFavorite';
+import { useEffect, useState } from 'react';
 import notImage from '../../assets/img/no-image.jpg';
+import IsFavorite from '../isFavorite/isFavorite';
+import './Card.css';
 
 const Card = ({ movies, searchInput, onShowDetails }) => {
     const [favoritos, setFavoritos] = useState(() => {

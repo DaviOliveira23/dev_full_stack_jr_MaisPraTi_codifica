@@ -2,6 +2,7 @@ import { FaArrowLeft } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 import './Profile.css';
 import IsFavorite from "../isFavorite/isFavorite";
+import notImage from '../../assets/img/no-image.jpg';
 
 const Profile = ({ movieId, onBack }) => {
     const [movie, setMovie] = useState(null);
@@ -53,7 +54,15 @@ const Profile = ({ movieId, onBack }) => {
                     setFavoritos={setFavoritos}
                 />
                 <div className="poster-container">
-                    <img className="img-poster" src={movie.Poster} alt={movie.Title} />
+                    <img
+                        className="img-poster"
+                        src={movie.Poster && movie.Poster !== "N/A" ? movie.Poster : notImage}
+                        alt={movie.Title}
+                        onError={(e) => {
+                            e.currentTarget.onerror = null;
+                            e.currentTarget.src = notImage;
+                        }}
+                    />
                 </div>
                 <div className="info-movie">
                     <h1 className='title'><span>{movie.Title}</span></h1>
