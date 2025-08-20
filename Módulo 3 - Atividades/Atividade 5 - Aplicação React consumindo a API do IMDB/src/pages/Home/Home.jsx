@@ -4,6 +4,8 @@ import Card from "../../components/Card/Card";
 import PageNavigation from "../../components/PageNavigation/PageNavigation";
 import Profile from "../../components/Profile/Profile";
 import { useMovies } from "../../components/useMovies/useMovies";
+import { Link } from "react-router-dom";
+import "./Home.css";
 
 const Home = () => {
     const [searchInput, setSearchInput] = useState("");
@@ -22,7 +24,9 @@ const Home = () => {
     return (
         <div className="home">
             <SearchBar onSearch={(query) => setSearchInput(query)} />
-
+            <Link to={"/favoritos"} className="menu-favorites">
+                Meus Favoritos
+            </Link>
             <div className="movies_container">
                 {loading && <p>Carregando...</p>}
                 {error && <p style={{ color: "red" }}>Erro: {error}</p>}
