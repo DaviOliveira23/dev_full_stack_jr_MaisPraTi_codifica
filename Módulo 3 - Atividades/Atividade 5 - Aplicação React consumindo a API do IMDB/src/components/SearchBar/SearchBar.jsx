@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './SearchBar.css';
+import lupa from '../../assets/img/lupa.png';
 import FetchGet from '../Axios/Axios';
 
 function SearchBar() {
@@ -21,7 +22,7 @@ function SearchBar() {
           >
             <img
               className="img-search"
-              src="/img/lupa.png"
+              src={lupa}
               alt="Icone de uma lupa"
             />
           </button>
